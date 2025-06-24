@@ -1,0 +1,100 @@
+{
+  "birthdays": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "birthdate": "2024-06-27",
+      "relationship": "Friend",
+      "location": "New York",
+      "gift": "Limited Edition Book",
+      "cost": 35,
+      "delivery": "In Person",
+      "giftStatus": "ready",
+      "notes": "Purchased and wrapped - ready to go!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "birthdate": "2024-07-05",
+      "relationship": "Family",
+      "location": "Los Angeles",
+      "gift": "Designer Watch",
+      "cost": 250,
+      "delivery": "Courier",
+      "giftStatus": "pending",
+      "notes": "Ordered online - expected delivery: July 1\n- [ ] Confirm delivery date\n- [ ] Buy gift wrap"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "birthdate": "2024-06-30",
+      "relationship": "Colleague",
+      "location": "Chicago",
+      "gift": "Restaurant Gift Card",
+      "cost": 75,
+      "delivery": "Mail",
+      "giftStatus": "not_ready",
+      "notes": "Need to purchase from store\n- [ ] Visit mall\n- [ ] Buy card\n- [ ] Mail by June 28"
+    },
+    {
+      "id": 4,
+      "name": "Alice Brown",
+      "birthdate": "2024-07-12",
+      "relationship": "Friend",
+      "location": "Miami",
+      "gift": "Designer Perfume",
+      "cost": 120,
+      "delivery": "Online Delivery",
+      "giftStatus": "pending",
+      "notes": "Deciding between Chanel and Dior\n- [ ] Make final selection\n- [ ] Place order"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "birthdate": "2024-07-03",
+      "relationship": "Family",
+      "location": "Seattle",
+      "gift": "Wireless Headphones",
+      "cost": 180,
+      "delivery": "In Person",
+      "giftStatus": "ready",
+      "notes": "Wrapped and ready to go!"
+    },
+    {
+      "id": 6,
+      "name": "Emma Wilson",
+      "birthdate": "2024-06-25",
+      "relationship": "Friend",
+      "location": "Boston",
+      "gift": "Cashmere Sweater",
+      "cost": 95,
+      "delivery": "Mail",
+      "giftStatus": "not_ready",
+      "notes": "Need to buy and wrap\n- [ ] Visit department store\n- [ ] Choose color\n- [ ] Ship by June 23"
+    },
+    {
+      "id": 7,
+      "name": "Michael Chen",
+      "birthdate": "2024-07-18",
+      "relationship": "Colleague",
+      "location": "San Francisco",
+      "gift": "Desk Organizer",
+      "cost": 45,
+      "delivery": "In Person",
+      "giftStatus": "ready",
+      "notes": "Purchased and ready"
+    },
+    {
+      "id": 8,
+      "name": "Sarah Johnson",
+      "birthdate": "2024-06-29",
+      "relationship": "Family",
+      "location": "Austin",
+      "gift": "Smart Watch",
+      "cost": 300,
+      "delivery": "In Person",
+      "giftStatus": "pending",
+      "notes": "Backordered - contact support\n- [ ] Check delivery status\n- [ ] Find backup gift"
+    }
+  ]
+}
