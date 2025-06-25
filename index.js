@@ -1,25 +1,34 @@
-// DOM Elements
-const celebrationForm = document.getElementById("celebrationForm");
-const celebrationList = document.getElementById("celebrationList");
-const searchInput = document.getElementById("searchInput");
-const notificationBadge = document.getElementById("notification badge");
-const notificationPanel = document.getElementById("notificationPanel");
-const notificationContent = document.getElementById("notificationContent");
-const closeNotifications = document.getElementById("closeNotifications");
-const upcomingCelebrations = document.getElementById("upcomingCelebrations");
-const totalCost = document.getElementById("totalCost");
-const readyPercantage = document.getElementById("readyPercantage");
+// Base URL for the JSON server
+constBAse_url="http://localhost:5505/";
 
-//App initializing
-function init(){
-  saveCelebrations(); //data setup
-  renderCelebrations(); //display existing celebrations
-  updateStats(); // calculate/show metrics
-  checkNotifications(); //handles notifications
-}
+//DOM Elements
+const celebrationsForm = document.getElementById("celebration-form");
+const celebrationList = document.getElementById("celebration-list");
+const SearchInput = document.getElementById("search");
+
+//Array to hold celebrations data
+let celebrations = [];
+
+//Initialize when page loads
+document.addEventListener("DOMContentLoaded",()=>{
+  loadCelebrations();
+
 
 //Event Listeners
-celebrationForm.addEventListener("submit", addCelebration);
-searchInput.addEventListener("input", filterCelebrations);
-notificationBadge.addEventListener("click", toggleNotifications);
-closeNotifications.addEventListener("click", toggleNotifications)
+celebrationsForm.addEventListener("submit", addCelebration);
+SearchInput.addEventListener("input",filterCelebrations);
+
+});
+
+//load Celebrations from server
+function loadCelebrations(){
+  fetch(BASE_URL)
+
+  .then(response => response,json())
+  .then(data=>{
+    celebrations = data;
+
+    renderAllCelebrations(celebrations);
+  })
+  
+}

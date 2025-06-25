@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birthday & aniversary Gift Tracker</title>
+  <title>Advanced Celebration Tracker</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/a460c478c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="containetr">
+  <div class="container">
     <header>
-      <hi></hi><i class="fa-duotone fa-solid fa-gifts"></i>Birthday & aniversary Gift Tracker </hi>
+      <h1><i class="fa-duotone fa-solid fa-gifts"></i>Advanced Celebration Tracker  </h1>
       <p class="subtitle">"Because love is in the details." Track birthdays & anniversaries, get gentle nudges, and give gifts that truly show you care.</p>
-      <div class="notification badge" id="notificationBadge">
+      <div class="notification-badge" id="notificationBadge">
         <i class="fa-regular fa-bell"></i>
       </div>
     </header>
@@ -31,22 +32,30 @@
       <div class = "stat-label">Total Cost</div>
     </div>
 
-    <div>
-      <div class = "stat-value" id = "readyPercantage">0%</div>
+    <div class="stat-item">
+      <div class = "stat-value" id = "readyPercentage">0%</div>
       <div class = "stat-label">Gifts Ready</div>
     </div>
 
     <div class = "app-container">
       <div class = "form-section">
-        <h2> 🎉 Record a Cherished Celebration </h2>
-        <form id = "celebrationForm">
+        <h2> 🎉 Add a Cherished Celebration </h2>
+
+        <form id = "celebration-Form">
           <div class = "form-group">
-            <label> 🎉 "Cherished Occasion Date" </label>
-            <input type = "date" id = "occasionDate" required>
+            <label for = "name" >  Name </label>
+            <input type = "text" id = "name" placeholder="Enter name" required>
           </div>
 
+          
+            <div class="form-group">
+              <label for = "celebrationDate">Celebration Date</label>
+              <input type = "date" id = "celebrationDate" required>
+            </div>
+          
+
           <div class = "form-group" >
-            <label for = "relationship">Relationship</label>
+            <label for = "relationship" >Relationship</label>
             <select id = "relationship" aria-label="Select relationship type">
               <option value = "" disabled selected>Select relationship...</option>
               <option value = "family">Family</option>
@@ -66,7 +75,7 @@
           </div>
 
           <div class = "form-group">
-            <label for = "delivery"></label>
+            <label for = "delivery"> Delivery </label>
             <select id = "delivery">
               <option value = "" > Choose how you'd like it delivered </option>
               <option value = "In Person" > Inperson </option>
@@ -77,8 +86,8 @@
           </div>
 
           <div class = "form-group">
-            <label></label>
-            <select>
+            <label for = "status">Status</label>
+            <select id = "status">
               <option value = "Ready"> 🟢 Ready </option>
               <option value = "In progress" > ⏳ Brewing </option>
               <option value = "Not ready" > 🔴  Not Ready </option>
@@ -87,7 +96,7 @@
 
           <div class = form-group>
             <label for = "notes">Notes / Gift Checklist</label>
-            <textarea  id = "" placeholder="Gift Inspiration, My Shopping List, etc" rows = "3"></textarea>
+            <textarea  id = "notes" placeholder="Gift Inspiration, My Shopping List, etc" rows = "3"></textarea>
           </div>
 
           <button type = "submit">Add celebration</button>
@@ -101,8 +110,8 @@
           <input type = "text" id = "searchInput" placeholder = "Search by name or location">
         </div>
 
-        <div class = "birthday-list" id = "birthday-list">
-          <!-- Birthday items will be added here dynamically -->
+        <div class = "celebration-list" id = "celebration-list">
+          <!-- celebration items will be added here dynamically -->
         </div>
       </div>
     </div>
@@ -136,6 +145,6 @@
     <p>Advanced Celebration Tracker © 2025 | Never miss a birthday or anniversary again!</p>
   </footer>
 
-  <script src=" ./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
