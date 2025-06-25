@@ -30,5 +30,27 @@ function loadCelebrations(){
 
     renderAllCelebrations(celebrations);
   })
-  
+  .catch(error => console.error("Error",error));
 }
+
+//Render all celebrations
+function renderAllCelebrations(celebrationsArray){
+  
+    celebrationList.innerHTML = "";
+    celebrationsArray.forEach(celebration=>{
+      const celebration = renderCelebration(celebration);
+      celebrationList.appendChild(celebrationElement);
+
+    });
+}
+
+// render a single celebration
+function renderCelebrations(celebration){
+  const li = document.createElement("li");
+
+ //check if celebration is within 7 days for notification
+ const today = new Date();
+ const celebrationDate = new Date (celebration.celebrationDate) 
+} 
+
+
