@@ -71,3 +71,23 @@ const formattedDate = celebrationDate.toLocaleDateString("en-US",{
   month:"long",
   day:"numeric"
 });
+
+li.innerHTML=`
+<strong>${celebrationElement.name}</strong>
+
+<p>Date: ${formattedDate}</p>
+
+<p>Location: ${celebration.location}</p>
+
+<p>Gift: ${celebration.gift} (Cost: $${celebration.cost})</p>
+
+<p>Delivery: ${celebration.delivery}</p>
+
+<button class="delete-btn" data-id="${celebration.id}">Delete</button>`;
+
+//Add eventlistener to delete button
+const deleteButton = li.querySelector("delete-btn");
+deleteButton.addEventListener("click",()=>deleteCelebration(celebration.id));
+
+return li;
+
