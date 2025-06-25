@@ -61,3 +61,13 @@ const diffinDays = Math.floor((celebrationDate-today)/(1000*60*60*24));
 
 //if the celebration is in the next 7 days(includingtoday) and not in past
 
+if(diffinDays>=0&&diffinDays<=7){
+  li.classList.add("upcoming");
+}
+
+//Format the celebration for display
+const formattedDate = celebrationDate.toLocaleDateString("en-US",{
+  year:"numeric",
+  month:"long",
+  day:"numeric"
+});
