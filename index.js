@@ -42,7 +42,7 @@ function renderAllCelebrations(celebrationsArray){
       celebrationList.appendChild(celebrationElement);
 
     });
-}
+
 
 // render a single celebration
 function renderCelebrations(celebration){
@@ -90,4 +90,23 @@ const deleteButton = li.querySelector("delete-btn");
 deleteButton.addEventListener("click",()=>deleteCelebration(celebration.id));
 
 return li;
+}
+
+//Add new celebration
+function addCelebration(event){
+  event.preventDefault();
+}
+
+//get form values
+const name = document.getElementById('name').value;
+
+const celebrationdate = document.getElementById('celebrationdate').value;
+
+const location = document.getElementById('location').value;
+
+const gift = document.getElementById('gift').value;
+
+const cost = parseFloat(document.getElementById('cost').value);
+
+const delivery = document.getElementById('delivery').value;
 
