@@ -52,5 +52,12 @@ function renderCelebrations(celebration){
  const today = new Date();
  const celebrationDate = new Date (celebration.celebrationDate) 
 } 
+ //set both dates to same time to compare only the date part
+ today.setHours(0,0,0,0);
+ celebrationdate.setHours(0,0,0,0);
 
+//calculate difference in days
+const diffinDays = Math.floor((celebrationDate-today)/(1000*60*60*24));
+
+//if the celebration is in the next 7 days(includingtoday) and not in past
 
