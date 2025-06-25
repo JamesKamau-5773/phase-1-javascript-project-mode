@@ -1,11 +1,11 @@
 {
-  "birthdays": [
+  "Celebrations": [
     {
       "id": 1,
-      "name": "John Doe",
-      "birthdate": "2024-06-27",
+      "name": "wycliff Ombese",
+      "birthday date": "2024-06-27",
       "relationship": "Friend",
-      "location": "New York",
+      "location": "Kasarani",
       "gift": "Limited Edition Book",
       "cost": 35,
       "delivery": "In Person",
@@ -14,10 +14,10 @@
     },
     {
       "id": 2,
-      "name": "Jane Smith",
-      "birthdate": "2024-07-05",
+      "name": "Jane Maridadi",
+      "anniversary date": "2024-07-05",
       "relationship": "Family",
-      "location": "Los Angeles",
+      "location": "Kampala",
       "gift": "Designer Watch",
       "cost": 250,
       "delivery": "Courier",
@@ -26,8 +26,8 @@
     },
     {
       "id": 3,
-      "name": "Bob Johnson",
-      "birthdate": "2024-06-30",
+      "name": "Bob Francis",
+      "birthday date": "2024-06-30",
       "relationship": "Colleague",
       "location": "Chicago",
       "gift": "Restaurant Gift Card",
@@ -38,10 +38,10 @@
     },
     {
       "id": 4,
-      "name": "Alice Brown",
-      "birthdate": "2024-07-12",
+      "name": "Alice Kanini",
+      "anniversary date": "2024-07-12",
       "relationship": "Friend",
-      "location": "Miami",
+      "location": "Kilimani",
       "gift": "Designer Perfume",
       "cost": 120,
       "delivery": "Online Delivery",
@@ -51,9 +51,9 @@
     {
       "id": 5,
       "name": "Charlie Davis",
-      "birthdate": "2024-07-03",
+      "birthday date": "2024-07-03",
       "relationship": "Family",
-      "location": "Seattle",
+      "location": "Thika",
       "gift": "Wireless Headphones",
       "cost": 180,
       "delivery": "In Person",
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "name": "Emma Wilson",
-      "birthdate": "2024-06-25",
+      "birthday date": "2024-06-25",
       "relationship": "Friend",
       "location": "Boston",
       "gift": "Cashmere Sweater",
@@ -75,9 +75,9 @@
     {
       "id": 7,
       "name": "Michael Chen",
-      "birthdate": "2024-07-18",
+      "anniversary date": "2024-07-18",
       "relationship": "Colleague",
-      "location": "San Francisco",
+      "location": "Kihinguro",
       "gift": "Desk Organizer",
       "cost": 45,
       "delivery": "In Person",
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "name": "Sarah Johnson",
-      "birthdate": "2024-06-29",
+      "birthday date": "2024-06-29",
       "relationship": "Family",
       "location": "Austin",
       "gift": "Smart Watch",
