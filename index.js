@@ -1,5 +1,5 @@
 // Base URL for the JSON server
-constBAse_url="https://challange-json-server.onrender.com";
+constBAse_url="https://challange-json-server.onrender.com/celebrations";
 
 //DOM Elements
 const celebrationsForm = document.getElementById("celebration-form");
