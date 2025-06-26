@@ -1,5 +1,5 @@
 // Base URL for the JSON server
-constBAse_url="http://localhost:5505/";
+constBAse_url="http://localhost:3000/";
 
 //DOM Elements
 const celebrationsForm = document.getElementById("celebration-form");
@@ -145,3 +145,10 @@ fetch(BASE_URL,{
     celebrationsForm.requestFullscreen();
   })
     .catch(error=>console.error("Error",error));
+
+    //function to delete celebration
+
+    //Delete request to remove the celebration
+
+
+    //remove the celebration from the array and re-render
