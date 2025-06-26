@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "name": "phase-1-javascript-project-mode",
+  "version": "1.0.0",
+  "description": "## Learning Goals",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesKamau-5773/phase-1-javascript-project-mode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesKamau-5773/phase-1-javascript-project-mode/issues"
+  },
+  "homepage": "https://github.com/JamesKamau-5773/phase-1-javascript-project-mode#readme"
+}

@@ -110,3 +110,38 @@ const cost = parseFloat(document.getElementById('cost').value);
 
 const delivery = document.getElementById('delivery').value;
 
+//create new Celebration Object
+const newCelebration = {
+  jina,
+
+  celebrationdate,
+
+  location,
+
+  gift,
+
+  cost,
+
+  delivery
+};
+
+//POST request to add new celebration
+fetch(BASE_URL,{
+  method: "POST",
+  headers:{
+    'Content-Type': 'application/json'
+  },
+  body:JSON.stringify(newCelebration)
+})
+
+  .then(response=>response.json())
+  .then(data=>{
+
+  //add new celebration array and re-render
+    celebrations.push(data);
+    renderAllCelebrations(celebrations)
+
+    //Reset form
+    celebrationsForm.requestFullscreen();
+  })
+    .catch(error=>console.error("Error",error));
